@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f1f5f9;
+}
+
+/* Print View -- hide navigation chrome so exported/printed report
+   pages show just the content (used by the Reports page's Print
+   button). */
+@media print {
+  aside,
+  header,
+  nav {
+    display: none !important;
+  }
+  main,
+  .ml-64 {
+    margin-left: 0 !important;
+  }
+  body {
+    background: #ffffff;
+  }
+}

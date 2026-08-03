@@ -1,0 +1,5 @@
+psutil
+platformdirs
+requests
+py-cpuinfo
+wmi

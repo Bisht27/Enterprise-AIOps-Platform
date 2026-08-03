@@ -1,0 +1,108 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# ==========================
+# Environment Files
+# ==========================
+.env
+.env.*
+*.env
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+
+# ==========================
+# Database
+# ==========================
+*.db
+*.sqlite3
+
+# ==========================
+# Alembic
+# ==========================
+alembic.ini.bak
+
+# ==========================
+# Python Cache
+# ==========================
+.pytest_cache/
+.mypy_cache/
+
+# ==========================
+# Node
+# ==========================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Build
+dist/
+build/
+
+# ==========================
+# React
+# ==========================
+frontend/node_modules/
+frontend/dist/
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Secrets
+# ==========================
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+id_rsa
+id_rsa.pub
+
+# AWS
+.aws/
+
+# Docker
+docker-compose.override.yml
+
+# ==========================
+# Coverage
+# ==========================
+.coverage
+htmlcov/
+
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.temp
+
+# ==========================
+# Uploads
+# ==========================
+uploads/
