@@ -106,3 +106,7 @@ htmlcov/
 # Uploads
 # ==========================
 uploads/
+
+__pycache__/
+*.pyc
+agent_identity.json
