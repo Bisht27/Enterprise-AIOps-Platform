@@ -105,21 +105,23 @@ def register_agent(db: Session, agent: AgentRegister, background_tasks=None):
         return asset
 
     asset = Asset(
-        asset_tag=f"PC-{agent.hostname}",
-        asset_name=agent.hostname,
-        asset_type="Computer",
+    asset_tag=f"PC-{secrets.token_hex(4).upper()}",
+    asset_name=agent.hostname,
+    asset_type="Computer",
 
-        mac_address=agent.mac_address,
+    hostname=agent.hostname,
 
-        agent_uuid=str(uuid.uuid4()),
-        api_key=secrets.token_hex(32),
+    mac_address=agent.mac_address,
 
-        health_status="Healthy",
-        status="Available",
+    agent_uuid=agent.agent_uuid or str(uuid.uuid4()),
+    api_key=secrets.token_hex(32),
 
-        last_seen=datetime.utcnow(),
-        is_online=True,
-    )
+    health_status="Healthy",
+    status="Available",
+
+    last_seen=datetime.utcnow(),
+    is_online=True,
+)
 
     _apply_hardware_fields(asset, agent)
 
